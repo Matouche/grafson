@@ -39,7 +39,7 @@ io.on('connection', (socket) => {
     });
 });
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 80;
 server.listen(port, () => {
     console.log(`Express server listening on port ${port}`);
 });

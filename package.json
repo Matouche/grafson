@@ -2,9 +2,22 @@
   "name": "caso",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^3.0.5"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "Projet de visualisation sonore à distance pour le CASO Arts en réseau à l'ENSAV La Cambre.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matouche/caso.git"
+  },
+  "author": "mathisdubrul",
+  "bugs": {
+    "url": "https://github.com/Matouche/caso/issues"
+  },
+  "homepage": "https://github.com/Matouche/caso#readme"
 }
