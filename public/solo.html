@@ -5,15 +5,37 @@
     <title>Grafson</title>
     <meta charset="utf-8" />
     <style>
-        body,
-        html {
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+        html,
+        body {
             margin: 0;
             background-color: #222233;
+            color: #fff;
+            font-size: 36px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+        }
+
+        #welcome {
+            position: absolute;
+            margin: auto;
+            width: 25rem;
+            height: 7rem;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            z-index: 2;
+            opacity: 1;
+            transition: opacity 2s;
         }
     </style>
 </head>
 
 <body>
+    <p id="welcome">Bonjour ! Pour démarrer l'expérience, merci d'activer votre microphone.</p>
     <script src="three.js"></script>
     <script>
         const app = async () => {
@@ -134,6 +156,7 @@
 
                 requestAnimationFrame(render);
             };
+            document.getElementById("welcome").style.opacity = 0;
             requestAnimationFrame(render);
         }
         app();
